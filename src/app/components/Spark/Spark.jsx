@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function Spark(props) {
   return (
@@ -7,7 +8,7 @@ function Spark(props) {
         <h2 className="text-center w-[95%] text-[56px] font-bold">
           Spark <span className="text-[#31dddd]">Regenerative Finance</span> 🌱
         </h2>
-        <p className='font-semibold'>Join ReFi starter's sustainable investment revolution. Let's create a greener financial future together!</p>
+        <p className='font-semibold'>Join ReFi starter&apos;s sustainable investment revolution. Let&apos;s create a greener financial future together!</p>
         <div className="w-[60%] flex justify-evenly pt-[5%]">
           <button className="rounded-3xl w-[45%] bg-[#ffffff] text-black py-[7px] cursor-pointer font-semibold">
             Sustainable investment
@@ -17,10 +18,12 @@ function Spark(props) {
           </button>
         </div>
       </div>
-      <img
+      <Image
         src="/trees-light1.png"
         alt="trees-light"
         className="absolute top-[2%] left-[-15%] z-10 "
+        width={500}
+        height={500}
       />
     </div>
   );
